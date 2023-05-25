@@ -1,3 +1,5 @@
+package main;
+
 public class Calculator{
     private int a;
     private int b;
