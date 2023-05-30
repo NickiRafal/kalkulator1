@@ -3,35 +3,22 @@ package main.java;
 public class Main{
     public static void main(String[] args) {
 
-        Calculator calculator = new Calculator(65,25) ;
+        Calculator calculator = new Calculator() ;
 
 
-        System.out.println( "Wynik dodawnia "+ calculator.getA()+" + "+calculator.getB()+" = "+calculator.add());
-        System.out.println("Wynik odejmowania "+calculator.getA()+" - "+calculator.getB()+" = "+ calculator.subtract());
+        System.out.println( "Wynik dodawnia to : "+ calculator.add(20,30));
+        System.out.println("Wynik odejmowania to : "+ calculator.subtract(50,40));
 
     }
 }
 
 class Calculator{
-    private int a;
-    private int b;
 
-    public int  getA(){
-        return this.a;
-    }
-    public int getB(){
-        return this.b;
-    }
-    public Calculator(int a, int b){
-        this.a = a;
-        this.b =b;
-    }
-
-    public int add(){
+    public int add(int a, int b){
         return a+b;
     }
 
-    public int subtract(){
+    public int subtract(int a, int b){
         return a-b;
     }
 
